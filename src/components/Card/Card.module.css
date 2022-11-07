@@ -1,0 +1,15 @@
+.cardWrapper {
+    width: 50%;
+    margin: 10px 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cardWrapper>h3 {
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: white;
+    background-color: #6085b4;
+}

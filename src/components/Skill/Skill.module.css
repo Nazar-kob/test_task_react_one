@@ -1,0 +1,12 @@
+.skillBar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 40%;
+}
+
+.skillStep {
+    width: 10px;
+    background-color: grey;
+}

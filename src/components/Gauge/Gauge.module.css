@@ -1,0 +1,32 @@
+.legend {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.legendItem {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 18px;
+}
+
+.itemColor {
+    aspect-ratio: 1 / 1;
+    width: 15%;
+}
+
+
+.legendItem:nth-child(1)>div {
+    background-color: #ff5f00;
+}
+
+.legendItem:nth-child(2)>div {
+    background-color: #ffbc03;
+}
+
+.legendItem:nth-child(3)>div {
+    background-color: #45a031;
+}

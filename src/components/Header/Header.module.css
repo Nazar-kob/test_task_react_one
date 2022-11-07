@@ -1,0 +1,39 @@
+.mainWrapper {
+    display: flex;
+    background-color: #6094c7;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #2d271e;
+}
+
+.leftWrapper {
+    margin-left: 50px;
+}
+
+.rightWrapper {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+
+}
+
+.headerTitle {
+    color: white;
+}
+
+.subTitle {
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    padding: 10px 60px;
+
+}
+
+.subTitle>h3 {
+    margin: 0;
+    color: #e46e62;
+}

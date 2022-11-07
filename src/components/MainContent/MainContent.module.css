@@ -1,0 +1,23 @@
+.contentWrapper {
+    background-color: #d7e9ee;
+    height: 100vh;
+}
+
+.upperSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upperSection>img {
+    width: auto;
+    height: auto;
+    max-width: 438px;
+    max-height: 438px;
+}
+
+.lowerSection {
+    display: flex;
+    width: 100%;
+
+}
