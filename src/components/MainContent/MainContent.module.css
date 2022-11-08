@@ -1,6 +1,6 @@
 .contentWrapper {
     background-color: #d7e9ee;
-    height: 100vh;
+    height: auto;
 }
 
 .upperSection {
@@ -9,15 +9,50 @@
     align-items: center;
 }
 
+.cardWrapperUpper {
+    width: 50%;
+    margin: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cardWrapperLower {
+    margin: 10px 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cardWrapperUpper>h3,
+.cardWrapperLower>h3 {
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: white;
+    background-color: #6085b4;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+
 .upperSection>img {
-    width: auto;
-    height: auto;
-    max-width: 438px;
-    max-height: 438px;
+    aspect-ratio: 1 / 1;
+    width: 40%;
+    margin-right: 10px;
 }
 
 .lowerSection {
     display: flex;
     width: 100%;
 
+}
+
+
+.cardContent {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
 }

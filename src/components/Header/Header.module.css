@@ -37,3 +37,33 @@
     margin: 0;
     color: #e46e62;
 }
+
+
+@media screen and (max-width: 600px) {
+    .subTitle {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .headerTitle {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .leftWrapper>img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .subTitle {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .subTitle>h3 {
+
+        color: white;
+
+    }
+}

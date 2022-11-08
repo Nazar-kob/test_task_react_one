@@ -30,3 +30,9 @@
 .legendItem:nth-child(3)>div {
     background-color: #45a031;
 }
+
+@media screen and (max-width: 920px) {
+    .legend {
+        display: none;
+    }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import style from "./MainContent.module.css";
 
 import logo from "../../images/wheel.jpg";
-import { Gauge, Card, Skill } from "../../components";
+import { Gauge, Skill } from "../../components";
 
 const listOfSkills = [
   {
@@ -28,7 +28,7 @@ const listOfSkills = [
   },
   {
     id: 4,
-    title: "Goal-Directed Bechavior:",
+    title: "Goal-Directed Behavior:",
     level: 2,
     description:
       "A child's initiation of and persistence in completing tasks of various difficulty.",
@@ -67,17 +67,24 @@ const MainContent = () => {
   return (
     <div className={style.contentWrapper}>
       <div className={style.upperSection}>
-        <Card title="Based On Your Answers, Your Child Can Improve Their College Preparation">
+        <div className={style.cardWrapperUpper}>
+          <h3>
+            Based On Your Answers, Your Child Can Improve Their College
+            Preparation
+          </h3>
           <Gauge />
-        </Card>
+        </div>
         <img src={logo} alt="College Readiness skills diagram" />
       </div>
       <div className={style.lowerSection}>
-        <Card title="Skill Progress">
-          {listOfSkills.map((el) => {
-            return <Skill key={el.id} el={el} />;
-          })}
-        </Card>
+        <div className={style.cardWrapperLower}>
+          <h3>Skill Progress</h3>
+          <div className={style.cardContent}>
+            {listOfSkills.map((el) => {
+              return <Skill key={el.id} el={el} />;
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

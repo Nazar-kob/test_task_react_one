@@ -8,7 +8,7 @@ const Skill = ({ el }) => {
   const increment = 1.5;
 
   return (
-    <>
+    <div className={style.SkillContent}>
       <div className={style.skillBar}>
         {[...Array(10).keys()].map((_, idx) => {
           return (
@@ -16,16 +16,16 @@ const Skill = ({ el }) => {
               key={idx}
               style={{
                 height: `${minHeight + increment * idx}px`,
-                backgroundColor: idx < el.level ? "green" : "grey",
+                backgroundColor: idx < el.level ? "#7498bd" : "grey",
               }}
               className={style.skillStep}
             ></div>
           );
         })}
       </div>
-      <h4>{el.title}</h4>
-      <p>{el.description}</p>
-    </>
+      <h4 className={style.textTitle}>{el.title}</h4>
+      <p className={style.textDescription}>{el.description}</p>
+    </div>
   );
 };
 

@@ -1,12 +1,36 @@
+.SkillContent {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+
+
 .skillBar {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-    border: 1px solid black;
-    width: 40%;
+    width: 50%;
 }
+
 
 .skillStep {
     width: 10px;
     background-color: grey;
+}
+
+.textTitle {
+    margin: 10px 0;
+}
+
+.textDescription {
+    margin-top: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .textDescription {
+        display: none;
+    }
+
 }
