@@ -2,8 +2,6 @@ import React from "react";
 import style from "./Skill.module.css";
 
 const Skill = ({ el }) => {
-  //   const skillLevel = 7;
-  console.log(el, "props");
   const minHeight = 7;
   const increment = 1.5;
 
